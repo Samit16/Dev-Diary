@@ -1,0 +1,30 @@
+name: Daily Dev Diary Entry
+
+on:
+  schedule:
+    - cron: '0 3 * * *'  # Every day at 8:30 AM IST (3:00 UTC)
+  workflow_dispatch:
+
+jobs:
+  update-log:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Update diary
+      run: |
+        echo "## $(date '+%B %d, %Y')" >> progress.md
+        echo "- No manual entry today. This is an auto-log entry to mark progress." >> progress.md
+        echo "" >> progress.md
+
+    - name: Commit changes
+      run: |
+        git config user.name "Samit"
+        git config user.email "samitbhisikar16@gmail.com"
+        git add progress.md
+        git commit -m "📝 Auto-diary update for $(date '+%B %d, %Y')" || echo "Nothing to commit"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
