@@ -10,3 +10,7 @@
 - Got a new small project idea.
 - Time to apply this theory 🔥
 ---
+## June 23, 2025
+- Learned more about inner HTML and DOM handling
+- Started work on a new project
+---
