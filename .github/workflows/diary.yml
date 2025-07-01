@@ -24,7 +24,7 @@ jobs:
         git config user.name "Samit"
         git config user.email "samitbhisikar16@gmail.com"
         git add progress.md
-        git commit -m "📝 Auto-diary update for $(date '+%B %d, %Y')" || echo "Nothing to commit"
+        git diff --quiet && git diff --staged --quiet || git commit -m "📝 Auto-diary update for $(date '+%B %d, %Y')"
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
