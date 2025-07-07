@@ -14,3 +14,7 @@
 - Learned more about inner HTML and DOM handling
 - Started work on a new project
 ---
+## July 7, 2025
+- Polished and tweaked LinkedIn profile
+- Learnt more about GitHub Contribution
+---
