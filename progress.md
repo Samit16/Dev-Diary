@@ -18,3 +18,5 @@
 - Polished and tweaked LinkedIn profile
 - Learnt more about GitHub Contribution
 ---
+## July 8, 2025
+- Solved few puzzles and games for logic improvement
