@@ -20,3 +20,7 @@
 ---
 ## July 8, 2025
 - Solved few puzzles and games for logic improvement
+---
+## July 28, 2025
+-Explored Figma and UI/UX
+---
